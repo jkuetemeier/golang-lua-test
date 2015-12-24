@@ -26,4 +26,12 @@ func main() {
 	L.SetGlobal("double", L.NewFunction(Double))
 	L.DoFile("calldouble.lua")
 
+	// test if global values are preserved between different files
+	// YES, they are!
+	L.DoFile("setglobal.lua")
+	L.DoFile("printglobal.lua")
+
+	// Set global from go
+	L.SetGlobal("aglobal", lua.LString("Hello World from go string!"))
+	L.DoFile("printglobal.lua")
 }
