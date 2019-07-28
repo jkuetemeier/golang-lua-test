@@ -8,7 +8,7 @@ I frist tried [go-lua](https://github.com/Shopify/go-lua) but quickly changed to
 
 To play with go and lua, just checkout this repo
 
-    git clone git@github.com:jkuetemeier/golang-lua-test.git
+    git clone git@github.com:kuetemeier/golang-lua-test.git
 
 and then build and execute it
 
